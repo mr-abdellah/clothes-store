@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+nav ul {
+    display: none;
+    grid-template:
+    'menu menu'
+    'link link'
+    'link link'
+    'link link'
+    'empty empty'
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 3fr 3fr 3fr 1fr;
+    border: 2px dashed #8c7de3;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menuBtn {
+    grid-area: 'menu';
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    place-self: center center;
+}
+
+.nav-link:hover {
+    background-color: #6e34d8;
+    border-radius: 12%;
+}
+
+.nav-img {
+    width: 25%;
+}
+
+nav ul li a {
+    text-align: right;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 1%;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    /* color: #8c7de3;
+    border-bottom: 1px solid #8c7de3; */
+}
+
+#open,
+#close {
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    background-color: transparent;
+    border: none;
+    width: 20%;
+}
+
+#open img,
+#close img {
+    width: 50%;
+}
+
+#close {
+    display: none;
+}
+
+#logo {
+    position: relative;
+    margin-right: auto;
+}
