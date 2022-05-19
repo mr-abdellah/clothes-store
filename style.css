@@ -103,6 +103,11 @@ nav ul li a:hover {
     width: 50%;
 }
 
+#close img {
+    background-color: #6e34d8;
+    border-radius: 50%;
+}
+
 #close {
     display: none;
 }
